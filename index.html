@@ -567,7 +567,7 @@ footer a {
     // Event listener saat tombol love diklik
     document.getElementById("loveIn").onclick = function () {
       if (sudahKlik) {
-        audio.play loop(); // Memainkan audio
+        audio.play(); // Memainkan audio
         document.querySelector(".overlay").style.display = "none"; // Menyembunyikan overlay
         stiker1.classList.add("scale1");
         teks1.classList.add("scale1"); // Menambahkan efek animasi pada stiker dan teks pertama
