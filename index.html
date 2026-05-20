@@ -405,7 +405,7 @@ footer a {
 
 <body>
   <!-- Audio latar -->
-  <audio src="hbd21.mp3" id="linkmp3" class="sembunyi"></audio>
+  <audio src="hbd21.mp3" loop id="linkmp3" class="sembunyi"></audio>
   <!-- Overlay loading -->
   <div class="overlay">
     <div class="loading-message">Hai kamu!<br />Tunggu dulu ya..</div>
@@ -567,7 +567,7 @@ footer a {
     // Event listener saat tombol love diklik
     document.getElementById("loveIn").onclick = function () {
       if (sudahKlik) {
-        audio.play(); // Memainkan audio
+        audio.play loop(); // Memainkan audio
         document.querySelector(".overlay").style.display = "none"; // Menyembunyikan overlay
         stiker1.classList.add("scale1");
         teks1.classList.add("scale1"); // Menambahkan efek animasi pada stiker dan teks pertama
